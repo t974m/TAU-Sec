@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "864167782777",
+    "firebase_url": "https://tau-ac002-default-rtdb.firebaseio.com",
+    "project_id": "tau-ac002",
+    "storage_bucket": "tau-ac002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864167782777:android:395cb2112e7eb80b98e7a8",
+        "android_client_info": {
+          "package_name": "com.noideastudios.hrms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864167782777-6ud34l180ihb0k9m7jkjufhp0r121mgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEIcm1EL4uu3ihQFO7iaF3Jj5A7ajzFe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864167782777-6ud34l180ihb0k9m7jkjufhp0r121mgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

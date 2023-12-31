@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/image_single_view"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:id="@+id/violation_NP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_single_view"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/defaultTextColor"
+        android:gravity="center"
+        android:text="NP"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/details_btn_violation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/violation_NP"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/delete_button"
+        android:text="TAP ON PHOTO TO VIEW DETAILS"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+</RelativeLayout>

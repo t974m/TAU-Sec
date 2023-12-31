@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="38dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/gothicb"
+                android:gravity="center"
+                android:text="Confirm changes on cloud"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TIL"
+                android:layout_marginTop="@dimen/ten"
+                android:hint="Enter Key "
+                android:visibility="gone"
+                app:counterMaxLength="10"
+                app:errorTextAppearance="@style/ErrorYellow">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Key"
+                    style="@style/TIET" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/key_proceed"
+                style="@style/fillButtons"
+                android:layout_width="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"                android:text="Confirm" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

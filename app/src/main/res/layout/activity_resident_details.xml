@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qu.elec499.tau.ResidentsDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/ten"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save"
+                style="@style/fillButtons"
+                android:layout_marginEnd="@dimen/ten"
+                android:text="@string/save_details" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/twenty"
+            android:src="@drawable/employee_tie"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    style="@style/tableParam"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/nameDetail"
+                    style="@style/tableValue"
+                    android:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    style="@style/tableParam"
+                    android:text="Phone" />
+
+                <EditText
+                    android:id="@+id/phoneDetail"
+                    style="@style/tableValue"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:text="Phone Number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    style="@style/tableParam"
+                    android:text="Car Plate" />
+
+                <EditText
+                    android:id="@+id/NPDetail"
+                    style="@style/tableValue"
+                    android:inputType="number"
+                    android:text="Vehicle Number Plate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/tableParam"
+                    android:text="Status" />
+
+                <Spinner
+                    android:id="@+id/statusDetail"
+                    style="@style/tableValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tableParam"
+                    android:layout_weight="1"
+                    android:text="@string/resume" />
+
+                <TextView
+                    android:id="@+id/resumeDetail"
+                    style="@style/tableValue"
+                    android:layout_weight="1"
+                    android:text="@string/view"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/change"
+                    style="@style/tableValue"
+                    android:layout_weight="1"
+                    android:text="@string/upload"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ten"
+            android:fontFamily="@font/gothici"
+            android:padding="@dimen/twenty"
+            android:text="@string/hint_below_table"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+</ScrollView>
